@@ -42,7 +42,7 @@ jobs:
           channel: "stable"
 
       - name: Build Flet web app
-        run: uv run flet build web
+        run: uv run flet build web --base-url "/resume-showcase-public/"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
