@@ -67,7 +67,7 @@ def App():
 
     showoff: ShowOff
     showoff, set_showoff = ft.use_state(showoffs["overview"])
-    snackbar_key, set_snackbar_key = ft.use_key = ft.use_state(0)
+    snackbar_key, set_snackbar_key = ft.use_state(0)
 
     def handle_selection(e):
         set_showoff(showoffs[e.control.value])
